@@ -1,0 +1,97 @@
+<!DOCTYPE>
+<html>
+<head><title>GA Dash Demo</title>
+
+	<!-- <script src="http://apis.google.com/js/client.js?onload=gadashInit" type="text/javascript"></script>
+    <script src="http://analytics-api-samples.googlecode.com/svn/trunk/src/reporting/javascript/ez-ga-dash/gadash-1.0.js" type="text/javascript"></script>
+    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+      
+    	gadash.configKeys({
+        'apiKey': 'AIzaSyCOTuAPg8Vohqs7uyFSF1dynUq515j4EBQ',
+        'clientId': '618862220490.apps.googleusercontent.com'
+      }); 
+      var dataOverTime = new gadash.Chart();
+      var scoreCard = new gadash.Chart();
+      var sourceMediumTable = new gadash.Chart(); 
+      var baseConfig = {
+        'last-n-days': 30,
+        'query': {
+          'metrics': 'ga:visitors, ga:visits, ga:pageviews',
+        },
+        'chartOptions': {
+          width: 400
+        }
+      }; 
+      var dataOverTimeConfig = {
+        'divContainer': 'dataOverTimeConfig',
+        'type': 'LineChart',
+        'query': {
+          'dimensions': 'ga:date',
+          'sort': 'ga:date'
+        },
+        'chartOptions': {
+          height: 250,
+          legend: {position: 'bottom'},
+          hAxis: {title:'Date'},
+          curveType: 'function'
+        }
+      }; 
+      var scoreCardConfig = {
+        'divContainer': 'scorecard',
+      }; 
+      var sourceMediumTableConfig = {
+        'divContainer': 'sourceMediumTableConfig',
+        'query': {
+          'dimensions': 'ga:source,ga:medium',
+          'sort': '-ga:visitors',
+          'max-results': 100
+        }
+      };
+      
+      function renderGraph() {
+
+         baseConfig.query.ids = 'ga:74268340';
+
+         dataOverTime.set(baseConfig).set(dataOverTimeConfig).render();
+
+         scoreCard.set(baseConfig).set(scoreCardConfig).render();
+    	sourceMediumTable.set(baseConfig).set(sourceMediumTableConfig).render();   
+
+         document.getElementById('ui').style.display = 'block';
+
+    return false;
+       }
+        
+      </script>-->
+ </head>
+<body>
+ <!-- 
+  <button id="Button1" style="visibility: hidden;">
+        Authorize Analytics</button>
+        <hr />
+        <p>
+        <button onclick="return renderGraph()">
+        Draw Charts</button></p>
+        <hr />
+        <div id="ui" style="display: none;">
+        <h4>
+        Data Over Time</h4>
+        <div id="dataOverTimeConfig">
+        </div>
+        <h5>
+        Totals for each metric</h5>
+        <div id="scorecard">
+        </div>
+        <h5>
+        Source and Mediums by Visitor</h5>
+        <div id="sourceMediumTableConfig">
+        </div> -->
+        
+        <script type="text/javascript" src="http://cdn.widgetserver.com/syndication/subscriber/InsertWidget.js"></script>
+        <script type="text/javascript">if (WIDGETBOX) WIDGETBOX.renderWidget('5c3858cb-7164-444e-a2e9-56e719e4f27c');</script>
+		<noscript>Get the <a href="http://www.widgetbox.com/widget/google-analytics-track-this">Google Analytics - Tracks This</a> widget and many other <a href="http://www.widgetbox.com/">great free widgets</a> at <a href="http://www.widgetbox.com">Widgetbox</a>! Not seeing a widget? (<a href="http://support.widgetbox.com/">More info</a>)</noscript>
+</body>
+</html>
